@@ -100,8 +100,7 @@ function draw() {
 
   }
 
-  //box movemont.y
-  packageSprite.y = helicopterSprite.y
+ 
 
   //box movement.x
   packageSprite.x = helicopterSprite.x
@@ -109,7 +108,7 @@ function draw() {
   //box falling
 
   if (keyDown("space")) {
-
+	Matter.Body.setStatic(packageBody,false);
 
 		
 }
